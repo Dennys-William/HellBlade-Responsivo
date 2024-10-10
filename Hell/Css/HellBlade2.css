@@ -1,0 +1,1024 @@
+* {
+    padding: 0;
+    margin: 0;
+  /*Fazer um botao de pause com a foto da logo do HellBlade*/
+}
+body {
+    --bg-opacity: 1;
+    background-color: #191919;
+    background-color: rgba(25, 25, 25, var(--bg-opacity));
+    filter: drop-shadow(0px 20px 15px);
+}
+
+.tudo {
+    position: relative;
+}
+
+nav {
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    
+}
+
+
+.fa {
+  
+  width: 4.5%;
+  height: 7%;
+  right: 7%;
+  top: 3%;
+  position: absolute;
+  text-align: center;
+
+}
+/* Solução pro celular
+.fa {
+  outline: 1px solid black;
+  width: 12%;
+  height: 6%;
+  right: 7%;
+  top: 3%;
+  position: absolute;
+  text-align: center;
+
+}
+*/
+
+.icon{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ visibility: visible;
+ transition: 0.3s;
+}
+.icon1{
+ width: 0%;
+ height: 100%;
+ object-fit: cover;
+ transform: translateY(-107%);
+ transition: 0.3s;
+ visibility: hidden;
+}
+
+
+/*
+.icon:hover {
+    transform: rotate(135deg);
+}*/
+
+
+.gira {
+   animation: 4s gira  infinite linear;
+}
+
+
+@keyframes gira {
+    from {
+    transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.geral {
+    top: 20%;
+    width: 50%;
+    height: 26%;
+    overflow: hidden;
+}
+
+.imagens {
+    
+    display: none;
+   
+}
+
+
+
+
+
+
+
+.geral h1 {
+    font-size: 8vh;
+    color: white;
+
+    margin-left: 7vh;
+    display: inline-block;
+
+}
+
+.item {
+   width: 100%;
+   height: 12%;
+}
+.item ul {
+    padding-top: 1px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: url(../Img/HellBlade/Seta\ Vermelha.png) no-repeat 0;
+    background-size: 85%;
+    
+    
+    margin-top: 4vh;
+    margin-left: 4vh;
+}
+    
+
+.geral li {
+    list-style: none;
+    margin-left: 7.5vh;
+   
+}
+.geral li:not(:first-child) {
+    margin-left: 10.5vh;
+}
+
+.geral a {
+    padding-bottom: 1px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition-duration: 0.3s;
+    color: white;
+    font-size: 1.9vh;
+    font-weight: 1000;
+}
+.geral a:hover {
+    opacity: 0.6;
+}
+
+
+
+
+
+.geral1 {
+    width: 40%;
+    height: 25%;
+    margin-left: 10vh;
+    display: flex;
+  
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+.geral1 h2 {
+    color: #FFFFFF;
+    font-size: 3.5vh;
+    width: 57%;
+    height: 100%;
+    text-align: right;
+    float: left;
+}
+.stu {
+    width: 40px;
+    height: 40px;
+   
+    
+    margin-top: 2vh;
+    
+}
+.bu {
+    width: 20vh;
+    height: 50px;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    border-radius: .25rem;
+    border: 1px solid white;
+    margin-top: 2.3vh;
+}
+.bu {
+    transition-duration: 0.3s;
+    
+}
+.bu p {
+    background: url(../Img/HellBlade/Seta\ gif1.gif);
+    
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    transition-duration: 0.3s;
+    padding-top: 2.2vh;
+    padding-bottom: 2.2vh;
+}
+.bu p:hover {
+    background: url(../Img/HellBlade/Seta\ gif1.gif);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+}
+
+.bu:hover {
+    
+    background: rgb(0, 0, 0);
+    transition-duration: 0.3s;
+}
+
+
+
+
+.text {
+    position: absolute;
+    bottom: 4%;
+    overflow: hidden;
+    width: 39%;
+}
+.text p {
+    color: white;
+    font-size: 6vh;
+    width: 63vh;
+    margin-left: 70px;
+}
+
+.redes {
+    
+   bottom: 9%;
+   right: 3%;
+   position: absolute;
+   width: 35vh;
+   height: 5vh;
+}
+.redes ul {
+    display: flex;
+    
+}
+.redes li {
+    list-style: none;
+}
+.redes li:not(:first-child) {
+    margin-left: 4vh;
+}
+
+.re {
+    width: 30px;
+    border-radius: 6rem;
+    outline: 1px solid white;
+    transition-duration: 0.3s;
+}
+
+.re:hover {
+    outline: 1px solid white;
+    outline-offset: 1vh;
+}
+
+
+
+
+.duv1 {
+    text-decoration: none;
+    background: rgba(255, 0, 0, 0.687);
+    color: white;
+    width: 6vh;
+    height: 3vh;
+    display: block;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 7vh;
+    padding-right: 4vh;
+    position: fixed;
+    right: 1.5%;
+    bottom: 2%;
+    border-radius: 6rem;
+}
+.duv1 {
+    background-image: url(../Img/HellBlade/ponto\ de\ interrogação.jpg);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 20% 48%;
+}
+.duv1 p {
+    font-size: 2.5vh;
+}
+
+.caixa {
+    margin-top: 6rem;
+    border-top: 1px solid gray;
+    width: 100%;
+    height: 65vh;
+    --bg-opacity: 1;
+    background-color: #191919;
+    background-color: rgba(25, 25, 25, var(--bg-opacity));
+    color: white;
+    display: flex;
+}
+.redes3 {
+    width: 18%;
+    height: 15vh;
+    margin-left: 2vh;
+    margin-top: 13vh;
+}
+.redes3 p {
+    padding-bottom: 7vh;
+    font-weight: 900;
+}
+
+.redes3 ul {
+    display: flex;
+}
+.redes3 li {
+    list-style: none;
+    margin-left: 2vh;
+}
+.redes3 li:not(:first-child) {
+    margin-left: 4vh;
+}
+.te1 {
+    display: none;
+}
+
+.caixa1 {
+
+    float: right;
+    width: 68%;
+    height: 10vh;
+    margin-top: 13vh;
+    margin-left: 28vh;
+}
+
+.doc a, .doc1 a{
+    color: white;
+}
+
+.doc {
+    display: flex;
+}
+.doc p {
+    margin-left: 2vh;
+    font-size: 2vh;
+}
+.doc a {
+    text-decoration: none;
+    font-size: 2vh;
+    transition: 0.2s;
+}
+.doc a:hover {
+    opacity: 0.4;
+}
+.doc a:not(:first-child) {
+    margin-left: 2vh;
+}
+
+.doc1 {
+    width: 60%;
+    margin-top: 3vh;
+    float: right;
+    display: flex;
+}
+.doc1 p, a {
+    font-size: 2vh;
+}
+.doc1 a {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.doc1 a:hover {
+    opacity: 0.4;
+}
+
+
+.doc1 a {
+    margin-left: 0vh;
+}
+.doc1 p:not(:first-child) {
+    margin-left: 3vh;
+}
+
+.caixa2 {
+    display: none;
+}
+
+.fi {
+    color: #828282;
+    font-family: Roboto, sans-serif;
+    font-size: .875rem;
+    width: 40%;
+    float: right;
+    margin-top: -40vh;
+    margin-right: 1vh;
+}
+
+.fi p {
+    text-align: right;
+}
+
+.fi1 p {
+    
+    padding-bottom: 2vh;
+}
+
+
+ 
+
+
+
+
+
+@media (max-width: 1024px) {
+
+   
+    .geral  {
+        width: 80%;
+    }
+
+    .fa {
+        
+        width: 10%;
+        height: 10%;
+        right: 7%;
+        top: 3%;
+        position: absolute;
+        text-align: center;
+      }
+      
+      .icon{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        visibility: visible;
+        transition: 0.3s;
+       }
+       .icon1{
+        width: 0%;
+        height: 100%;
+        object-fit: contain;
+        transform: translateY(-107%);
+        transition: 0.3s;
+        visibility: hidden;
+       }
+    
+
+
+     .geral h1 {
+        font-size: 6vh;
+     }
+    .geral ul {
+        background-position: 300%;
+        height: 11%;
+        background-size: 55vh 7.3vh;
+        margin-left: 0vh;
+        
+    }
+
+   
+   .geral1 {
+    width: 90%;
+    
+   }
+
+    .geral1 h2 {
+        width: 100%;
+    }
+ 
+    .text {
+        width: 40%;
+        bottom: 10%;
+    }
+    .text p {
+        width: 45vh;
+        font-size: 4vh;
+    }
+
+    .duv1 {
+        bottom: -15%;
+        right: 4%;
+    }
+    
+    .redes {
+        display: none;
+    }
+    .caixa1 {
+        display: none;
+    }
+    .caixa2 {
+        display: block;
+    }
+  
+    .caixa2 {
+       
+        
+        color: white;
+        
+        width: 100%;
+        height: 25vh;
+        margin-top: -30vh;
+        
+    }
+    .doc2 {
+        text-align: center;
+        width: 100%;
+        
+    }
+    .doc2 a {
+        color: white;
+        font-size: 2vh;
+        text-decoration: none;
+    }
+    .doc2 p {
+        font-size: 2vh;
+    }
+    
+    .doc3 {
+        
+        text-align: center;
+    }
+    .doc3 p {
+         font-size: 2vh;
+    }
+    .doc3 a {
+        color: white;
+        text-decoration: none;
+    }
+
+        .redes3 {
+        width: 100%;
+        margin-top: 15vh;
+        
+    }
+    .redes3 p {
+       text-align: center;
+    }
+
+    .redes3 ul {
+         justify-content: center;
+    }
+    .te {
+        display: none;
+    }
+    .te1 {
+        display: block;
+    }
+    
+    .fi {
+       background: #191919;
+        color: #828282;
+        float: left;
+        width: 100%;
+        margin-top: 0vh;
+        padding-bottom: 12vh;
+        font-family: Roboto, sans-serif;
+    }
+    
+    .fi p {
+        text-align: center;
+        font-size: 2vh;
+    }
+    
+    .fi2 {
+        padding: 1vh;
+        text-align: center;
+    }
+    .fi1 p {
+        padding-bottom: 2vh;
+    }
+} 
+
+
+
+@media (max-width: 786px) {
+   
+    body {
+        --bg-opacity: 1;
+        background-color: #191919;
+        background-color: rgba(25, 25, 25, var(--bg-opacity));
+         
+       
+    }
+     nav {
+        width: 100%;
+        display: block;
+     }
+    .geral {
+        width: 100%;
+        height: 50%;
+    }
+
+    .fa {
+        
+        width: 10%;
+        height: 10%;
+        right: 7%;
+        top: 3%;
+        position: absolute;
+        text-align: center;
+      }
+
+    .imagens {
+        width: 8%;
+        height: 20%;
+        margin-left: 3%;
+        background: none;
+        
+        display: block;
+        text-align: center;
+    }
+    
+    .menu {
+        width: 100%;
+        height: 100%;
+        transition: 0.6s;
+        object-fit: contain;
+    }
+    
+    .close {
+        width: 0%;
+        height: 100%;
+        transition: 0.6s;
+        object-fit: contain;
+        transform: translateY(-105%);
+    }
+    
+
+
+
+    .geral h1 {
+     font-size: 4vh;
+     padding: 2vh;
+     margin-left: 2%;
+     transform: translate(-0%);
+    }
+    /*
+    .geral ul {
+        margin-top: 3vh;
+        margin-left: 0vh;
+        background-size: 55vh 10vh;
+        background-position: 50%;
+        height: 8%;
+        width: 100%;
+        
+        justify-content: center;
+    }
+    */
+    .item {
+        width: 0%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+       
+        transition: 0.6s;
+    }
+    .item ul {
+        margin-top: 3vh;
+        margin-left: 0vh;
+        background-size: 55vh 10vh;
+        background-position: 50%;
+        height: 8%;
+        width: 100%;
+       
+        
+        justify-content: center;
+    }
+
+    .geral li {
+        margin-left:  0vh;
+    }
+    .geral li:not(:first-child) {
+        margin-left: 0vh;
+        padding-left: 5vh;
+    }
+
+    .geral a {
+        padding: 1.2vh;
+        padding-bottom: 0px;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+
+
+    .geral1 {
+        width: 100%;
+        height: 50%;
+        margin-left: 0px;
+        margin-top: 10vh;
+    }
+    .geral1 h2 {
+        width: 39vh;
+        
+        font-size: 22px;
+        margin-left: 5%;
+        height: 30%;
+        text-align: left;
+        
+    }
+    
+   
+    .bu {
+        width: 24vh;
+        height: 8vh;
+        margin-right: 0vh;
+        transform: translateX(-44vh);
+        margin-top: 1.5vh;
+    }
+
+    .stu {
+        width: 38px;
+        height: 40px;
+        object-fit: cover;
+        margin-top: 12px;
+        transform: translateX(-110px);
+        
+    }
+    
+    
+    
+    .text {
+        position: absolute;
+        bottom: 12%;
+        left: 5%;
+       
+        height: 10vh;
+        width: 35%;
+    }
+    .text p {
+        color: white;
+        font-size: 24px;
+        width: 45vh;
+        
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .duv1 {
+        right: 6%;
+        bottom: -13%;
+    }
+
+    .redes3 {
+        width: 100%;
+        margin-top: 15vh;
+        
+    }
+    .redes3 p {
+       text-align: center;
+    }
+
+    .redes3 ul {
+         justify-content: center;
+    }
+    .te {
+        display: none;
+    }
+    .te1 {
+        display: block;
+    }
+
+    .caixa1 {
+        display: none;
+    }
+    .caixa2 {
+        display: block;
+    }
+  
+    .caixa2 {
+       
+        
+        color: white;
+        
+        width: 100%;
+        height: 25vh;
+        margin-top: -30vh;
+        
+    }
+    .doc2 {
+        text-align: center;
+        width: 100%;
+        
+    }
+    .doc2 a {
+        color: white;
+        font-size: 2vh;
+    }
+    .doc2 p {
+        font-size: 2vh;
+    }
+    
+    .doc3 {
+        
+        text-align: center;
+    }
+    .doc3 p {
+         font-size: 2vh;
+    }
+    .doc3 a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .fi {
+        background: #191919;
+        color: #828282;
+        float: left;
+        width: 100%;
+        font-size: .75rem;
+        margin-top: 0vh;
+        padding-bottom: 12vh;
+        font-family: Roboto, sans-serif;
+    }
+    
+    .fi p {
+        text-align: center;
+    }
+    
+    .fi2 {
+        padding: 1vh;
+        text-align: center;
+    }
+    .fi1 p {
+        padding-bottom: 2vh;
+    }
+
+}
+
+@media (max-width: 740px) {
+
+
+    .imagens {
+        width: 15%;
+        height: 17%;
+       
+        display: block;
+        
+    }
+
+    .fa {
+        
+        width: 10%;
+        height: 10%;
+        right: 7%;
+        top: 3%;
+        position: absolute;
+        text-align: center;
+      }
+
+    
+    .menu {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .close {
+        width: 0%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .stu {
+        transform: translateX(-20px);
+        margin-top: 0px;
+    }
+
+    .bu {
+        transform: translateX(-0vh);
+        
+        height: 7vh;
+    }
+    
+}
+
+@media (max-width:546px){
+    .fa {
+        
+        width: 10%;
+        height: 10%;
+        right: 7%;
+        top: 3%;
+        position: absolute;
+        text-align: center;
+      }
+      
+.icon{
+    
+    object-fit: contain;
+    
+   }
+   .icon1{
+    
+    object-fit: contain;
+    
+   }
+}
+
+@media (max-width: 425px) {
+  
+    .fa {
+        
+        width: 10%;
+        height: 7%;
+        right: 7%;
+        top: 3%;
+        position: absolute;
+        text-align: center;
+      }
+    .geral1 {
+         
+         margin-top: 10vh;
+    }
+    .geral1 h2 {
+        font-size: 3vh;
+        margin-left: 4%;
+    }
+    .stu {
+        transform: translateX(-88px);
+        margin-top: 3px;
+    }
+
+    .bu {
+        width: 20vh;
+        height: 7vh;
+        margin-right: -3vh;
+        margin-top: 1vh;
+        transform: translateX(-16vh);
+    }
+
+    .text {
+        width: 59%;
+        height: 9vh;
+        bottom: 13%;
+        left: 4%;
+    }
+    .text p { 
+        width: 45vh;
+    }
+    .duv1 {
+        bottom: -16%;
+    }
+}
+
+@media (max-width: 412px) {
+    .bu {
+        transform: translateX(-0vh);
+        height: 7vh;
+        width: 20vh;
+    }
+    .stu {
+        transform: translateX(-10px);
+        margin-top: 3px;
+    }
+    
+    .text {
+        width: 71%;
+        
+    }
+    .text p { 
+        width: 40vh;
+    }
+
+   
+}
+
+@media (max-width: 375px)  {
+    .stu {
+        transform: translateX(-15px);
+        
+    }
+
+    .bu {
+        transform: translateX(-2vh);
+        width: 22vh;
+        height: 8vh;
+    }
+
+    .text {
+        width: 70%;
+    }
+    .duv1 {
+        bottom: -17%;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .stu {
+        transform: translateX(-20px);
+        margin-top: 0px;
+    }
+
+    .bu {
+        transform: translateX(-0vh);
+    }
+
+    .geral1 h2 {
+        font-size: 16px;   
+    }
+    .text {
+        width: 48%;
+        height: 20%;
+        bottom: 0%;
+    }
+    .text p { 
+        width: 25vh;
+        height: 100%;
+        text-align: left;
+    }
+    .duv1 {
+        bottom: -17%;
+    }
+}
