@@ -198,7 +198,7 @@ nav {
     
 }
 .bu p {
-    background: url(../Img/HellBlade/Seta\ gif1.gif);
+    background: url(../Img/HellBlade/Play.png);
     
     background-size: 28px;
     background-repeat: no-repeat;
@@ -208,7 +208,7 @@ nav {
     padding-bottom: 2.2vh;
 }
 .bu p:hover {
-    background: url(../Img/HellBlade/Seta\ gif1.gif);
+    background: url(../Img/HellBlade/Play.png);
     background-size: 30px;
     background-repeat: no-repeat;
     background-position: 90%;
