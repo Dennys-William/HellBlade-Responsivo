@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-  /*Fazer um botao de pause com a foto da logo do HellBlade*/
+  
 }
 body {
     --bg-opacity: 1;
@@ -35,18 +35,7 @@ nav {
   text-align: center;
 
 }
-/* Solução pro celular
-.fa {
-  outline: 1px solid black;
-  width: 12%;
-  height: 6%;
-  right: 7%;
-  top: 3%;
-  position: absolute;
-  text-align: center;
 
-}
-*/
 
 .icon{
  width: 100%;
@@ -65,10 +54,7 @@ nav {
 }
 
 
-/*
-.icon:hover {
-    transform: rotate(135deg);
-}*/
+
 
 
 .gira {
@@ -187,19 +173,19 @@ nav {
 .bu {
     width: 20vh;
     height: 50px;
+    display: block;
     color: white;
     background: rgba(255, 255, 255, 0);
+    transition-duration: 0.3s;
     border-radius: .25rem;
     border: 1px solid white;
     margin-top: 2.3vh;
 }
-.bu {
-    transition-duration: 0.3s;
-    
-}
+
 .bu p {
     background: url(../Img/HellBlade/Play.png);
-    
+   
+   
     background-size: 28px;
     background-repeat: no-repeat;
     background-position: 90%;
@@ -207,6 +193,28 @@ nav {
     padding-top: 2.2vh;
     padding-bottom: 2.2vh;
 }
+.buM {
+    width: 20vh;
+    height: 50px;
+    display: none;
+    color: white;
+    background: rgba(255, 255, 255, 0);
+    transition-duration: 0.3s;
+    border-radius: .25rem;
+    border: 1px solid white;
+    margin-top: 2.3vh;
+}
+
+.buM p {
+    background: url(../Img/HellBlade/Play.png);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 90%;
+    transition-duration: 0.3s;
+    padding-top: 2.2vh;
+    padding-bottom: 2.2vh;
+}
+
 .bu p:hover {
     background: url(../Img/HellBlade/Play.png);
     background-size: 30px;
@@ -643,18 +651,7 @@ nav {
      margin-left: 2%;
      transform: translate(-0%);
     }
-    /*
-    .geral ul {
-        margin-top: 3vh;
-        margin-left: 0vh;
-        background-size: 55vh 10vh;
-        background-position: 50%;
-        height: 8%;
-        width: 100%;
-        
-        justify-content: center;
-    }
-    */
+   
     .item {
         width: 0%;
         height: 100%;
@@ -710,12 +707,27 @@ nav {
     
    
     .bu {
+        display: block;
+        width: 24vh;
+        height: 8vh;
+        margin-right: 0vh;
+        transform: translateX(-44vh);
+        margin-top: 1.5vh;
+        display: none;
+    }
+
+    .buM {
+        
+        background: rgba(0, 0, 0, 0.49);
+        display: block;
         width: 24vh;
         height: 8vh;
         margin-right: 0vh;
         transform: translateX(-44vh);
         margin-top: 1.5vh;
     }
+    
+    
 
     .stu {
         width: 38px;
@@ -877,8 +889,13 @@ nav {
 
     .bu {
         transform: translateX(-0vh);
-        
         height: 7vh;
+        display: none;
+    }
+    .buM {
+        transform: translateX(-0vh);
+        height: 7vh;
+        display: block;
     }
     
 }
@@ -936,8 +953,17 @@ nav {
         margin-right: -3vh;
         margin-top: 1vh;
         transform: translateX(-16vh);
+        display: none;
     }
-
+   
+    .buM {
+        display: block;
+        width: 20vh;
+        height: 7vh;
+        margin-right: -3vh;
+        margin-top: 1vh;
+        transform: translateX(-16vh);
+    }
     .text {
         width: 59%;
         height: 9vh;
@@ -957,6 +983,13 @@ nav {
         transform: translateX(-0vh);
         height: 7vh;
         width: 20vh;
+        display: none;
+    }
+    .buM {
+        transform: translateX(-0vh);
+        height: 7vh;
+        width: 20vh;
+        display: block;
     }
     .stu {
         transform: translateX(-10px);
@@ -984,6 +1017,13 @@ nav {
         transform: translateX(-2vh);
         width: 22vh;
         height: 8vh;
+        display: none;
+    }
+    .buM {
+        transform: translateX(-2vh);
+        width: 22vh;
+        height: 8vh;
+        display: block;
     }
 
     .text {
@@ -1002,6 +1042,11 @@ nav {
     }
 
     .bu {
+        display: none;
+        transform: translateX(-0vh);
+    }
+    .buM {
+        display: block;
         transform: translateX(-0vh);
     }
 
