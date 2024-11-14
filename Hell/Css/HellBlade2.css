@@ -40,14 +40,14 @@ nav {
 .icon{
  width: 100%;
  height: 100%;
- object-fit: cover;
+ object-fit: contain;
  visibility: visible;
  transition: 0.3s;
 }
 .icon1{
  width: 0%;
  height: 100%;
- object-fit: cover;
+ object-fit: contain;
  transform: translateY(-107%);
  transition: 0.3s;
  visibility: hidden;
@@ -56,7 +56,7 @@ nav {
 
 
 
-
+/*
 .gira {
    animation: 4s gira  infinite linear;
 }
@@ -71,7 +71,7 @@ nav {
         transform: rotate(360deg);
     }
 }
-
+*/
 
 .geral {
     top: 20%;
