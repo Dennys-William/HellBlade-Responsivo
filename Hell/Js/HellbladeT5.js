@@ -1,6 +1,6 @@
 var radio = document.querySelector('manual-btn')
 var cont = 1
-
+//document.getElementById('radio1').checked = false
 let variT = document.getElementById('radio1').checked = true
 let imgPri = document.querySelector('.slider')
 
@@ -18,12 +18,6 @@ let icon1 = document.querySelector('.icon1')
  }, 1000)
     
 
-
-    
-
-
-
-     
     
      let imgL = setInterval(() =>{
         if (variT){
