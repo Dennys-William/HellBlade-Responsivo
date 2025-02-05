@@ -8,8 +8,16 @@
    
     overflow: hidden; 
     position: relative;
-    transition: 1s;
+    transition: 0.7s;
   }
+.caixaB-desce {
+    height: 100vh;
+}
+.caixaB-subir {
+    height: 60vh;
+}
+
+
 
   .Setbaixo {
     width: 70px;
@@ -20,9 +28,16 @@
     top: 0%;
     transform: translateX(-50%);
     position: absolute;
+    display: none;
     }
     .Setbaixo:hover {
      background: rgba(177, 167, 167, 0.957);   
+    }
+    .Setbaixo-subir {
+     display: none;
+    }
+    .Setbaixo-desce {
+     display: block;
     }
 
 .caixaB1 {
@@ -34,26 +49,51 @@
     transform: translateY(-50%);
     margin: auto;
     
+    min-width: 0px;
+    max-width: 0px;
+    
+    min-height: 320px;
+    max-height: 800px;
+   
+    transition: 1.2s;
+}
+
+.caixaB1-desce {
     min-width: 320px;
     max-width: 500px;
-    
-    min-height: 0px;
-    max-height: 0px;
-    
-    transition: 1s;
 }
+.caixaB1-clique {
+    min-height: 400px;
+    max-height: 800px;
+}
+
+
 .fotoB {
     width: 100%;
     position: initial;
     min-height: 0px;
     max-height: 0px;
+   
+    min-height: 320px;
+    max-height: 300px;
+   
+   
     border-radius: 15px;
-    transition: 0.6s;
-    object-fit: cover;
-    
+    transition: 1s;
+    object-fit: cover;   
 }
+
+.fotoB-clique {
+    min-height: 0px;
+    max-height: 0px;
+    position: absolute;
+}
+
+
+    
+
 .videoB {
-    transition: 0.6s;
+   
     border-radius: 15px;
     width: 100%;
     height: 100%;
@@ -72,6 +112,10 @@
     transform: translateX(-50%);
    /* outline: 1px solid black;*/
 }  
+.botaoB-clique {
+    height: 0px;
+    transition: 0.1s;
+}
 
 .botaoB1 {
     /*outline: 1px solid blue;*/
@@ -81,7 +125,16 @@
     border-radius: 25px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    transition: 4s;
+    opacity: 0;
+}
+.botaoB1-desce {
+    opacity: 1;
+}
+.botaoB1-clique {
+    height: 0px;
+    transition: 0.1s;
 }
  
 
@@ -102,21 +155,23 @@
 
 .logoB {
     width: 100%;
-   
-    height: 0vh;
     
-  
+    height: 15vh;
     position: absolute;
     text-align: center;
     bottom: 3%;
-    transition: 1s;
+    
   }
+
 
 
   .logoB1 {
     width: 90%;
-    height: 100%;
+    height: 0%;
     padding: 1vh;
     object-fit: contain;
-   
   }
+  .logoB1-desce {
+    height: 100%;
+  }
+  

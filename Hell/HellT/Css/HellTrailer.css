@@ -1,150 +1,206 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  background: #293748;
+background: #293748;
 }
 
 .logoH {
-  width: 100%;
-  height: 18vh;
-  
-  
-  position: absolute;
-  text-align: center;
-  top: 1%;
-  transition: 1s;
+width: 100%;
+height: 18vh;
+position: absolute;
+text-align: center;
+top: 1%;
+
 }
+.logoH-desce {
+height: 0px;
+}
+.logoH-subir {
+height: 18vh;
+}
+
 .logo1H {
-  width: 90%;
-  height: 100%;
-  padding: 1vh;
-  object-fit: contain;
- 
+width: 90%;
+height: 100%;
+padding: 1vh;
+object-fit: contain;
+
 }
 
 .caixaH {
-  
- background: #293748;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  transition: 1s;
-  overflow: hidden;
+
+background: #293748;
+width: 100%;
+height: 100vh;
+position: relative;
+transition: 0.7s;
+overflow: hidden;
 }
+.caixaH-desce {
+height: 0vh;
+}
+.caixaH-subir {
+height: 100vh;
+}
+
+
+
 .caixa1H {
 
-  outline: 3px solid #3E4659;
-  outline-offset: -3px;
-  border-radius: 15px;
+outline: 3px solid #3E4659;
+outline-offset: -3px;
+border-radius: 15px;
 /*
-  min-width: 320px;
-  max-width: 500px;
+min-width: 320px;
+max-width: 500px;
 */
-  min-width: 0px;
-  max-width: 0px;
-  
+min-width: 0px;
+max-width: 0px;
 
-  min-height: 320px;
-  max-height: 800px;
 
-  
-   
-  margin: auto;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: 0.6s;
-  
+min-height: 320px;
+max-height: 800px;
+ 
+margin: auto;
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+transition: 1.2s;
 }
+.caixa1H-inicio {
+min-width: 320px;
+max-width: 500px;
+}
+.caixa1H-clique {
+min-height: 400px;
+max-height: 800px;
+}
+
+
+
+
 
 .fotoH {
-  width: 100%;
-  
-  min-height: 320px;
-  max-height: 300px;
-  border-radius: 15px;
-  transition: 0.6s;
-  object-fit: cover;
-  position: initial;
-  
+width: 100%;
+min-height: 320px;
+max-height: 300px;
+border-radius: 15px;
+transition: 1s;
+object-fit: cover;
+position: initial;
+
 }
 
+.fotoH-clique {
+min-height: 0px;
+max-height: 0px;
+position: absolute;
+}
+
+
 .videoH {
-    /*outline: 7px solid black;*/
-  
-    transition: 0.6s;
-    border-radius: 15px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-   
-   
+  /*outline: 7px solid black;*/
+
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+ 
+ 
 }
 
 .ga {
- 
-  color: white;
-  left: 50%;
-  top: 101%;
-  transform: translateX(-50%);
-  position: absolute;
+
+color: white;
+left: 50%;
+top: 101%;
+transform: translateX(-50%);
+position: absolute;
 }
 .ga p {
-  font-size: 4vh;
+font-size: 4vh;
 }
 
 .botaoH {
-  width: 0px;
-  height: 100%;
-  position: absolute;
- /* outline: 1px solid black;*/
-   left: 50%;
-   transform: translateX(-50%);
-   transition: 1s;
+width: 0px;
+height: 100%;
+position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ transition: 1.2s;
+ border-radius: 50%;
 }
+.botaoH-inicio {
+width: 90px;
+}
+.botaoH-clique {
+height: 0px;
+}
+
 
 .botao1H {
-  width: 100%;
-  height: 86px;
-  object-fit: cover;
-  border-radius: 500px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%)
+width: 100%;
+height: 86px;
+
+object-fit: cover;
+position: absolute;
+top: 50%;
+transform: translateY(-50%) rotate(0deg); /* Mantém a posição fixa e rotação inicial */
+transform-origin: center; /* Define o centro como ponto de rotação */
+transition: transform 1s ease; /* Suaviza a transição de rotação */
+}
+.botao1H-inicio {
+transform: translateY(-50%) rotate(360deg); /* Gira mantendo a mesma posição */
+}
+.botao1H-clique {
+height: 0px;
+}
+/*
+.botao1H-desce {
+height: 0px;
 }
 
-
+.botao1H-subir {
+height: 86px;
+}
+*/
 
 
 
 .carregarH {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+width: 100px;
+height: 100px;
+object-fit: cover;
 }
 
 .setcimaH {
-   width: 70px;
-  height: 70px;
-  /*background: rgba(177, 167, 167, 0.957);*/
-  background: rgba(177, 167, 167, 0.957);
-  border-radius: 500px;
-  position: absolute;
-  left: 50%;
-   bottom: 1%;
-   transform: translateX(-50%);
+ width: 70px;
+height: 70px;
+/*background: rgba(177, 167, 167, 0.957);*/
+background: rgba(177, 167, 167, 0.957);
+border-radius: 500px;
+position: absolute;
+left: 50%;
+ bottom: 1%;
+ transform: translateX(-50%);
+}
+.setcimaH-desce {
+display: none;
+}
+.setcimaH-subir {
+display: block;
 }
 
 
 .desH {
-  top: 0%;
-  position: absolute;
-  padding: 1vh;
-  
+top: 0%;
+position: absolute;
+padding: 1vh;
+
 }
 
 

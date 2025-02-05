@@ -1,5 +1,6 @@
 let bot = document.querySelector('.botao1H')
-bot.addEventListener('click', veri)
+let botB = document.querySelector('.botaoB1')
+
 let foto = document.querySelector('.fotoH')
 let botao = document.querySelector('.botaoH')
 let botao1 = document.querySelector('.botao1H')
@@ -21,237 +22,137 @@ let videoB = document.querySelector('.videoB')
 
 
 
+
 setTimeout(() => {
-
-    caixa1.style.transition = '1.5s'
-    caixa1.style.minWidth = '320px'
-    caixa1.style.maxWidth = '500px'
-    botao.style.width = '90px'
-
-}, 1000)
-
-
-function veri() {
-
-
-    foto.style.minHeight = '0px'
-    foto.style.maxHeight = '0px'
-    foto.style.transition = '0.6s'
-    foto.style.position = 'absolute'
-
-    botao.style.height = '0px'
-    botao1.style.height = '0px'
-
-    caixa1.style.minHeight = '400px'
-    caixa1.style.maxHeight = '800px'
-
-
-    video.style.height = '100%'
-
-    video.style.visibility = 'visible'
     
-    /*video.innerHTML = `
-  <iframe class="videoH" 
-          src="https://www.youtube.com/embed/OnaIgCIDOWM?autoplay=1&rel=0" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-  </iframe>`;
-  */
- 
-  video.innerHTML = `
-  <iframe class="videoH" 
-          src="https://www.youtube.com/embed/OnaIgCIDOWM?autoplay=1&rel=0&loop=1&playlist=OnaIgCIDOWM" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-  </iframe>`;
+    caixa1.classList.toggle('caixa1H-inicio')
+    botao.classList.toggle('botaoH-inicio')
+    botao1.classList.toggle('botao1H-inicio')
+}, 1200)
 
- 
+
+
+bot.addEventListener('click', () => {
+
+    foto.classList.add('fotoH-clique') 
+    botao.classList.add('botaoH-clique')
+    botao1.classList.add('botao1H-clique')
+    caixa1.classList.add('caixa1H-clique')
+
+  
+        
+    
+    setTimeout(() => {
+        video.innerHTML = `
+        <iframe class="videoH" 
+                src="https://www.youtube.com/embed/OnaIgCIDOWM?autoplay=1&rel=0&loop=1&playlist=OnaIgCIDOWM" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+        </iframe>`;
+    }, 1200)
 
    
-}
+})
 
 
-let botB = document.querySelector('.botaoB1')
-botB.addEventListener('click', veriB)
 
-function veriB() {
-    fotoB.style.minHeight = '0px'
-    fotoB.style.maxHeight = '0px'
-    fotoB.style.position = 'absolute'
 
-    botaoB.style.width = '0px'
-    botaoB1.style.width = '0px'
 
-    caixaB1.style.minHeight = '400px'
-    caixaB1.style.maxHeight = '800px'
+botB.addEventListener('click', () => {
+    
+    fotoB.classList.add('fotoB-clique')
+    caixaB1.classList.add('caixaB1-clique')
+    botaoB.classList.add('botaoB-clique')
+    botaoB1.classList.add('botaoB1-clique')
+   
+ 
 
-    videoB.style.height = '100%'
-    videoB.style.visibility = 'visible'
+  setTimeout(() => {
     videoB.innerHTML = `
-  <iframe class="videoB" 
-          src="https://www.youtube.com/embed/3VYGOkMnGCE?autoplay=1&rel=0" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen>
-  </iframe>`;
+    <iframe class="videoB" 
+            src="https://www.youtube.com/embed/3VYGOkMnGCE?autoplay=1&rel=0" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+    </iframe>`;
 
-}
+}, 1200)
 
-
-let sc = document.querySelector('.setcimaH')
-sc.addEventListener('click', sbaixo)
-let setcima = document.querySelector('.setcimaH')
-
-
-
-function sbaixo() { //Parte de cima que vai fechar
-
-    //                                CIMA
-    caixa.style.height = '0vh'
-    //Os 2 codigo abaixo são para dar uma animação ao quadrado da parte de cima na hora de desce ou subir.
-    caixa1.style.minWidth = '130px'
-    caixa1.style.maxWidth = '0px'
-    //
-    logo.style.height = '0px'
-    botao1.style.height = '0px'
-    //Esses 2 com inicio de 'set' são para não fica feio na hora da animação
-    setcima.style.display = 'none'
-    setbaixo.style.display = 'block'
+})
 
 
 
 
-    video.style.display = 'none'
+//Comando do botão que fica na parte de cima, mas que ao clicar nele, a tela vai para baixo.
+let setcimaH  = document.querySelector('.setcimaH')
+let subir  = document.querySelector('.setcimaH')
+setcimaH.addEventListener('click', () => {
+    /* Parte de cima */
+    caixa.classList.add('caixaH-desce')
+    botao1.classList.toggle('botao1H-desce')
 
+    subir.style.display = 'none'
+    desce.style.display = 'block'
+     
 
-    video.style.height = '0%'
+    /* Parte de baixo */
+    
+    caixaB.classList.add('caixaB-desce')
+    caixaB1.classList.add('caixaB1-desce')
+    botaoB1.classList.add('botaoB1-desce')
+    logoB1.classList.add('logoB1-desce')
+    
+   
+   
+      //Video
 
-
-    setTimeout(function () {
-        video.innerHTML = '<iframe class="videoH"></iframe>'
-    }, 1000)
-
-
-    if (videoB.style.display == 'none') {
-        videoB.style.display = 'block'
-
-        fotoB.style.minHeight = '320px'
-        fotoB.style.maxHeight = '300px'
-        fotoB.style.position = 'initial'
-
-        videoB.style.position = 'absolute'
-        videoB.style.height = '0%'
-        videoB.style.visibility = 'hidden'
-
-
-        botaoB.style.width = '90px'
-        botaoB1.style.width = '100%'
-
-    }
-
-    //                                  FIM DO CIMA
-
-    //                                  BAIXO
-    caixaB.style.height = '100vh'
-    caixaB1.style.minHeight = '320px'
-    caixaB1.style.maxHeight = '800px'
-
-    fotoB.style.minHeight = '320px'
-    fotoB.style.maxHeight = '300px'
-
-    logoB.style.height = '15vh'
-
-
-    botaoB.style.width = '90px'
-    botaoB1.style.width = '100%'
-    //                                  FIM DO BAIXO
-
-}
+      if(subir.style.display == 'none') {
+       
+        setTimeout(() => {
+    
+        foto.classList.remove('fotoH-clique') 
+        botao.classList.remove('botaoH-clique')
+        botao1.classList.remove('botao1H-clique')
+        caixa1.classList.remove('caixa1H-clique')
+        video.innerHTML = ``;
+        }, 1200)
+        
+    } 
+  
+})
 
 
 let des = document.querySelector('.Setbaixo')
-des.addEventListener('click', scima)
-let setbaixo = document.querySelector('.Setbaixo')
+let desce = document.querySelector('.Setbaixo')
+des.addEventListener('click', () => {
+    /* Parte de cima */
+    caixa.classList.remove('caixaH-desce')
+    subir.style.display = 'block'
+    desce.style.display = 'none'
+    /* Parte de baixo */
 
-function scima() { //Parte de baixo que vai fechar
-
-    //                                CIMA
-    //Esses 2 com inicio de 'set' são para não fica feio na hora da animação
-    setcima.style.display = 'block'
-    setbaixo.style.display = 'none'
-
-
-    caixa.style.height = '100vh'
-    //Os 2 codigo abaixo e para animação da 'caixa1' quando subir a tela
-    caixa1.style.minWidth = '320px'
-    caixa1.style.maxWidth = '500px'
-    //
-    caixa1.style.minHeight = '320px'
-    caixa1.style.maxHeight = '800px'
-
-
-
-    logo.style.height = '18vh'
-    botao1.style.height = '86px'
-
-
-    //videosBB
-    videoB.style.display = 'none'
-
-    videoB.style.height = '0%'
-
-    setTimeout(function () {
-        videoB.innerHTML = '<iframe class="videoB"></iframe>'
-    }, 1000)
-
-
-    if (video.style.display == 'none') { //Video de da parte de cima
-
-        video.style.display = 'block'
-
-
-
-        video.style.height = '0%'
-        video.style.visibility = 'hidden'
-        video.style.position = 'absolute'
-        foto.style.minHeight = '320px'
-        foto.style.maxHeight = '300px'
-        foto.style.transition = '0s'
-        foto.style.position = 'initial'
-
-        botao.style.height = '100%'
-        botao1.style.height = '86px'
-
+    caixaB.classList.remove('caixaB-desce')
+    caixaB1.classList.remove('caixaB1-desce')
+    logoB1.classList.remove('logoB1-desce')
+    botaoB1.classList.remove('botaoB1-desce')
+    //Video
+    if(desce.style.display == 'none') {
+        setTimeout(() => {
+            fotoB.classList.remove('fotoB-clique')
+            caixaB1.classList.remove('caixaB1-clique')
+            botaoB.classList.remove('botaoB-clique')
+            botaoB1.classList.remove('botaoB1-clique')
+            videoB.innerHTML = ``;
+        }, 1200)
+       
     }
+})
 
 
-
-    //                                  FIM DO CIMA
-
-    //                                  BAIXO
-    caixaB.style.height = '0vh'
-    caixaB1.style.minHeight = '0px'
-    caixaB1.style.maxHeight = '0px'
-
-    fotoB.style.minHeight = '0px'
-    fotoB.style.maxHeight = '0px'
-
-    logoB.style.height = '0px'
-
-
-    botaoB.style.width = '0px'
-    botaoB1.style.width = '0%'
-
-
-    //                                  FIM DO BAIXO
-}
 
 
